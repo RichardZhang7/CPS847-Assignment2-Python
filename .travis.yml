@@ -10,7 +10,7 @@ install:
 
 
 script:
-  - python sumTest.py
+  - coverage run sumTest.py
 
 
 after_success:
