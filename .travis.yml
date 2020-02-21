@@ -9,6 +9,7 @@ install:
 
 script:
   - python sumTest.py
+  - python -m unittest sumTest.py
 
 
 after_success:
