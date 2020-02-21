@@ -8,8 +8,7 @@ install:
 
 
 script:
-  - python sumTest.py
-  - python -m unittest sumTest.py
+  - python test_sum.py
 
 
 after_success:
