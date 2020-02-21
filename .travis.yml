@@ -10,7 +10,7 @@ install:
 
 
 script:
-  - python ttest_sum.py
+  - python sumTest.py
 
 
 after_success:
