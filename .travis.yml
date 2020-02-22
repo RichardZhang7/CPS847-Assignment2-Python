@@ -2,7 +2,7 @@ sudo: false
 
 language: python
 
-python: 3.8.1 
+python: 3.8.1
 
 install:
   - pip install codecov
@@ -10,8 +10,9 @@ install:
 
 
 script:
-  - python sumTest.py
+  - coverage run sumTest.py
 
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
+  - codecov
