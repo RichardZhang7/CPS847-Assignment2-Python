@@ -17,5 +17,5 @@ after_success:
   - codecov
 
 after_failure:
-   - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
-  - codecov
+  - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
+    - codecov
