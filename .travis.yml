@@ -10,7 +10,7 @@ install:
 
 
 script:
-  - coverage run sumTest.py
+
 
 
 after_success:
@@ -19,4 +19,4 @@ after_success:
 
 after_failure:
   - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
-    - codecov
+  - codecov
