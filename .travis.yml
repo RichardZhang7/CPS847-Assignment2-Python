@@ -30,6 +30,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet . ${DEPLOY_USER}@${DEPLOY_SERVER}:/home/${DEPLOY_USER}
+  script: rsync -r --delete-after --quiet ${TRAVIS_BUILD_DIR}/source ${DEPLOY_USER}@${DEPLOY_SERVER}:/home/${DEPLOY_USER}
   on:
     branch: master
