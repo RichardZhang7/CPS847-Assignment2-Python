@@ -16,3 +16,7 @@ script:
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
   - codecov
+
+after_failure:
+  - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
+  - codecov
