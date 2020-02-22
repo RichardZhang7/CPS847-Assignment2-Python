@@ -1,5 +1,5 @@
 import unittest
-import sum
+import source.sum as sum
 
 class sumTest(unittest.TestCase):
 
