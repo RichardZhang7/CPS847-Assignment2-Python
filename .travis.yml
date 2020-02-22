@@ -8,10 +8,8 @@ install:
   - pip install coverage
   - pip install codecov
 
-
 script:
   - coverage run sumTest.py
-
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
@@ -20,3 +18,7 @@ after_success:
 after_failure:
   - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
   - codecov
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_2e3610291f91_key -iv $encrypted_2e3610291f91_iv
+  - in deploy_rsa.enc -out deploy_rsa -d
