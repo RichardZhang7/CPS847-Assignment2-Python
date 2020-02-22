@@ -6,7 +6,7 @@ python: 3.8.1
 
 install:
   - pip install codecov
-  - pip install coverage    
+  - pip install coverage
 
 
 script:
